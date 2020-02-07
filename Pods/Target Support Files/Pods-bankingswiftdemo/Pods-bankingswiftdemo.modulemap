@@ -1,0 +1,6 @@
+framework module Pods_bankingswiftdemo {
+  umbrella header "Pods-bankingswiftdemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
