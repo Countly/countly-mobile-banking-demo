@@ -19,6 +19,7 @@ class ViewController: UIViewController {
      //   signInButton.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
         navigationItem.hidesBackButton = true;
         view.backgroundColor =  UIColor.white
+
     }
 
     @objc func didButtonClick(_ sender: UIButton) {
