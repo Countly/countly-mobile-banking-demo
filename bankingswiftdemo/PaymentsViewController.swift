@@ -1,5 +1,5 @@
 //
-//  TransfersViewController.swift
+//  PaymentsViewController.swift
 //  bankingswiftdemo
 //
 //  Created by Cem Karakurt on 6.02.2020.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TransfersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PaymentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
-    @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {        super.viewDidLoad()
         tableView.delegate = self;
@@ -20,8 +20,8 @@ class TransfersViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     
-    var links: [String] = ["Wire Transfer","EFT","SWIFT"]
-    var identifiers: [String] = ["toWireTransferView","toEftView","toSwiftView"]
+    var links: [String] = ["Tax","Credit Card","Util"]
+    var identifiers: [String] = ["toTaxView","toCreditCardView","toUtilPaymentsView"]
 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

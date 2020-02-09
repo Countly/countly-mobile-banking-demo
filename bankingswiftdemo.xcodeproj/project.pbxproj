@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926623ED86AD00E47747 /* PaymentsViewController.swift */; };
+		2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */; };
 		2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050C95D23ED4394003CA34D /* TransfersViewController.swift */; };
 		20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */; };
 		20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EEF23EBF5B6006439C7 /* SceneDelegate.swift */; };
@@ -15,12 +17,15 @@
 		20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EF623EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld */; };
 		20AC4EFA23EBF5BE006439C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EF923EBF5BE006439C7 /* Assets.xcassets */; };
 		20AC4EFD23EBF5BE006439C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EFB23EBF5BE006439C7 /* LaunchScreen.storyboard */; };
+		20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */; };
 		20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC11D223EC5075000C2796 /* MainViewController.swift */; };
 		20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC11D423EC55E4000C2796 /* SideMenuViewController.swift */; };
 		5671C45F871CA44265DA09B2 /* Pods_bankingswiftdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D3D3F36B1566E1981336F0 /* Pods_bankingswiftdemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2031926623ED86AD00E47747 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilPaymentsViewController.swift; sourceTree = "<group>"; };
 		2050C95D23ED4394003CA34D /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
 		20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingswiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		20AC4EF923EBF5BE006439C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20AC4EFC23EBF5BE006439C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AC4EFE23EBF5BE006439C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsViewController.swift; sourceTree = "<group>"; };
 		20DC11D223EC5075000C2796 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20DC11D423EC55E4000C2796 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		8B3C4E6E367DFD34EEC0D61E /* Pods-bankingswiftdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankingswiftdemo.release.xcconfig"; path = "Target Support Files/Pods-bankingswiftdemo/Pods-bankingswiftdemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 				20DC11D223EC5075000C2796 /* MainViewController.swift */,
 				20DC11D423EC55E4000C2796 /* SideMenuViewController.swift */,
 				2050C95D23ED4394003CA34D /* TransfersViewController.swift */,
+				2031926623ED86AD00E47747 /* PaymentsViewController.swift */,
+				2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */,
+				20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */,
 			);
 			path = bankingswiftdemo;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */,
 				20AC4EF223EBF5B6006439C7 /* ViewController.swift in Sources */,
 				20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */,
 				20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */,
@@ -225,6 +235,8 @@
 				20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */,
 				2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */,
 				20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */,
+				20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */,
+				2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

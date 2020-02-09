@@ -18,7 +18,7 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         tableView.delegate = self;
         tableView.dataSource = self;
-        tableView.tableFooterView = UIView()  // it's just 1 line, awesome!
+        tableView.tableFooterView = UIView()
     }
     
     
