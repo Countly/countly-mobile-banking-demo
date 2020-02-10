@@ -1,16 +1,26 @@
 PODS:
+  - Countly (19.08):
+    - Countly/NotificationService (= 19.08)
+  - Countly/NotificationService (19.08)
+  - iOSDropDown (0.3.4)
   - SideMenu (6.4.7)
 
 DEPENDENCIES:
+  - Countly
+  - iOSDropDown
   - SideMenu
 
 SPEC REPOS:
   trunk:
+    - Countly
+    - iOSDropDown
     - SideMenu
 
 SPEC CHECKSUMS:
+  Countly: 7c596e00a90a35b7978713a384455fe9a18f28aa
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
 
-PODFILE CHECKSUM: e4eba6f6fbf2a92ced5fe4dbb8884925d88d6e70
+PODFILE CHECKSUM: fe6921e6bbdad9f59d1fc74107e65c46a1a9286c
 
 COCOAPODS: 1.8.4

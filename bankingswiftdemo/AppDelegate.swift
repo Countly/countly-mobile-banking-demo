@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Countly
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

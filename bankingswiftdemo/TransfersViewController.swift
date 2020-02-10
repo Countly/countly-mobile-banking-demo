@@ -20,7 +20,7 @@ class TransfersViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     
-    var links: [String] = ["Wire Transfer","EFT","SWIFT"]
+    var links: [String] = ["To Countly Bank","To Another Bank","SWIFT"]
     var identifiers: [String] = ["toWireTransferView","toEftView","toSwiftView"]
 
 

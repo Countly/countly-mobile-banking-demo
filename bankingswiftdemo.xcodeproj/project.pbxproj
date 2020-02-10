@@ -18,6 +18,13 @@
 		20AC4EFA23EBF5BE006439C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EF923EBF5BE006439C7 /* Assets.xcassets */; };
 		20AC4EFD23EBF5BE006439C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EFB23EBF5BE006439C7 /* LaunchScreen.storyboard */; };
 		20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */; };
+		20D19E9E23F13BBA0051911F /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9D23F13BBA0051911F /* CalculationViewController.swift */; };
+		20D19EA023F151D40051911F /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9F23F151D40051911F /* TaxViewController.swift */; };
+		20D19EA223F164FC0051911F /* CreditCardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19EA123F164FC0051911F /* CreditCardPaymentViewController.swift */; };
+		20D19EA423F16C900051911F /* ElectricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19EA323F16C900051911F /* ElectricViewController.swift */; };
+		20D19EA623F16CD20051911F /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19EA523F16CD20051911F /* WaterViewController.swift */; };
+		20D19EA823F16CE90051911F /* GasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19EA723F16CE90051911F /* GasViewController.swift */; };
+		20D19EAA23F17A0A0051911F /* InvestmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19EA923F17A0A0051911F /* InvestmentsViewController.swift */; };
 		20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC11D223EC5075000C2796 /* MainViewController.swift */; };
 		20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC11D423EC55E4000C2796 /* SideMenuViewController.swift */; };
 		5671C45F871CA44265DA09B2 /* Pods_bankingswiftdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D3D3F36B1566E1981336F0 /* Pods_bankingswiftdemo.framework */; };
@@ -37,6 +44,13 @@
 		20AC4EFC23EBF5BE006439C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AC4EFE23EBF5BE006439C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsViewController.swift; sourceTree = "<group>"; };
+		20D19E9D23F13BBA0051911F /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
+		20D19E9F23F151D40051911F /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
+		20D19EA123F164FC0051911F /* CreditCardPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentViewController.swift; sourceTree = "<group>"; };
+		20D19EA323F16C900051911F /* ElectricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricViewController.swift; sourceTree = "<group>"; };
+		20D19EA523F16CD20051911F /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		20D19EA723F16CE90051911F /* GasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasViewController.swift; sourceTree = "<group>"; };
+		20D19EA923F17A0A0051911F /* InvestmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentsViewController.swift; sourceTree = "<group>"; };
 		20DC11D223EC5075000C2796 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20DC11D423EC55E4000C2796 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		8B3C4E6E367DFD34EEC0D61E /* Pods-bankingswiftdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankingswiftdemo.release.xcconfig"; path = "Target Support Files/Pods-bankingswiftdemo/Pods-bankingswiftdemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +105,13 @@
 				2031926623ED86AD00E47747 /* PaymentsViewController.swift */,
 				2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */,
 				20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */,
+				20D19E9D23F13BBA0051911F /* CalculationViewController.swift */,
+				20D19E9F23F151D40051911F /* TaxViewController.swift */,
+				20D19EA123F164FC0051911F /* CreditCardPaymentViewController.swift */,
+				20D19EA323F16C900051911F /* ElectricViewController.swift */,
+				20D19EA523F16CD20051911F /* WaterViewController.swift */,
+				20D19EA723F16CE90051911F /* GasViewController.swift */,
+				20D19EA923F17A0A0051911F /* InvestmentsViewController.swift */,
 			);
 			path = bankingswiftdemo;
 			sourceTree = "<group>";
@@ -228,14 +249,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */,
+				20D19E9E23F13BBA0051911F /* CalculationViewController.swift in Sources */,
+				20D19EA623F16CD20051911F /* WaterViewController.swift in Sources */,
+				20D19EA023F151D40051911F /* TaxViewController.swift in Sources */,
 				20AC4EF223EBF5B6006439C7 /* ViewController.swift in Sources */,
 				20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */,
+				20D19EA423F16C900051911F /* ElectricViewController.swift in Sources */,
 				20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */,
 				20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */,
 				20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */,
 				2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */,
+				20D19EAA23F17A0A0051911F /* InvestmentsViewController.swift in Sources */,
 				20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */,
+				20D19EA823F16CE90051911F /* GasViewController.swift in Sources */,
 				20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */,
+				20D19EA223F164FC0051911F /* CreditCardPaymentViewController.swift in Sources */,
 				2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

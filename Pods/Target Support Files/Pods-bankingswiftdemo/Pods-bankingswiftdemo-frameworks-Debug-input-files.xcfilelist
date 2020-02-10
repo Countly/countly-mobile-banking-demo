@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-bankingswiftdemo/Pods-bankingswiftdemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Countly/Countly.framework
 ${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
+${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework

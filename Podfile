@@ -7,5 +7,6 @@ target 'bankingswiftdemo' do
 
   # Pods for bankingswiftdemo
   pod ‘SideMenu’
-
+  pod 'iOSDropDown'
+  pod 'Countly'
 end
