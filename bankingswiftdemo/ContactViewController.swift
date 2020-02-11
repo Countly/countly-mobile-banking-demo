@@ -1,20 +1,20 @@
 //
-//  MainViewController.swift
+//  ContactViewController.swift
 //  bankingswiftdemo
 //
-//  Created by Cem Karakurt on 6.02.2020.
+//  Created by Cem Karakurt on 11.02.2020.
 //  Copyright © 2020 Cem Karakurt. All rights reserved.
 //
 
 import UIKit
 import Countly
 
-class MainViewController: UIViewController {
+class ContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true;
-        Countly.sharedInstance().recordView("MainView")
+        Countly.sharedInstance().recordView("ContactView")
+        // Do any additional setup after loading the view.
     }
     
 

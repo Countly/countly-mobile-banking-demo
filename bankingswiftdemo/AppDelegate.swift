@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let config: CountlyConfig = CountlyConfig()
+        config.appKey = "14e5e961d09e0ee0bfa7b2e0b8179675466fa010"
+        config.host = "https://try.count.ly"
+        config.features = [CLYCrashReporting]
+        config.enableDebug = true
+        config.enableRemoteConfig = true
+        Countly.sharedInstance().start(with: config)
+
         return true
     }
 

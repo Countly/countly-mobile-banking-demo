@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Countly
 
 class CalculationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -17,6 +18,7 @@ class CalculationViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         tableView.delegate = self;
         tableView.dataSource = self;
+    Countly.sharedInstance().recordView("CalculationView")
     }
     
     

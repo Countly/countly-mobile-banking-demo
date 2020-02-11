@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926623ED86AD00E47747 /* PaymentsViewController.swift */; };
 		2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */; };
+		2033045923F2849B007C6B64 /* MarketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033045823F2849B007C6B64 /* MarketsViewController.swift */; };
+		2033045B23F285F9007C6B64 /* PersonalFinanceLoanCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033045A23F285F9007C6B64 /* PersonalFinanceLoanCalculationViewController.swift */; };
+		2033045D23F2865A007C6B64 /* DepositReturnCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033045C23F2865A007C6B64 /* DepositReturnCalculationViewController.swift */; };
+		2033045F23F29749007C6B64 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033045E23F29749007C6B64 /* ContactViewController.swift */; };
+		2033046123F29808007C6B64 /* DepositRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046023F29808007C6B64 /* DepositRatesViewController.swift */; };
+		2033046323F2C1E7007C6B64 /* ToCountlyBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */; };
+		2033046523F2C6A8007C6B64 /* ToAnotherBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */; };
+		2033046723F2C821007C6B64 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046623F2C821007C6B64 /* SwiftViewController.swift */; };
 		2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050C95D23ED4394003CA34D /* TransfersViewController.swift */; };
 		20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */; };
 		20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EEF23EBF5B6006439C7 /* SceneDelegate.swift */; };
@@ -33,6 +41,14 @@
 /* Begin PBXFileReference section */
 		2031926623ED86AD00E47747 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilPaymentsViewController.swift; sourceTree = "<group>"; };
+		2033045823F2849B007C6B64 /* MarketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsViewController.swift; sourceTree = "<group>"; };
+		2033045A23F285F9007C6B64 /* PersonalFinanceLoanCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceLoanCalculationViewController.swift; sourceTree = "<group>"; };
+		2033045C23F2865A007C6B64 /* DepositReturnCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReturnCalculationViewController.swift; sourceTree = "<group>"; };
+		2033045E23F29749007C6B64 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		2033046023F29808007C6B64 /* DepositRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositRatesViewController.swift; sourceTree = "<group>"; };
+		2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToCountlyBankViewController.swift; sourceTree = "<group>"; };
+		2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAnotherBankViewController.swift; sourceTree = "<group>"; };
+		2033046623F2C821007C6B64 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		2050C95D23ED4394003CA34D /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
 		20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingswiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +128,14 @@
 				20D19EA523F16CD20051911F /* WaterViewController.swift */,
 				20D19EA723F16CE90051911F /* GasViewController.swift */,
 				20D19EA923F17A0A0051911F /* InvestmentsViewController.swift */,
+				2033045823F2849B007C6B64 /* MarketsViewController.swift */,
+				2033045A23F285F9007C6B64 /* PersonalFinanceLoanCalculationViewController.swift */,
+				2033045C23F2865A007C6B64 /* DepositReturnCalculationViewController.swift */,
+				2033045E23F29749007C6B64 /* ContactViewController.swift */,
+				2033046023F29808007C6B64 /* DepositRatesViewController.swift */,
+				2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */,
+				2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */,
+				2033046623F2C821007C6B64 /* SwiftViewController.swift */,
 			);
 			path = bankingswiftdemo;
 			sourceTree = "<group>";
@@ -249,12 +273,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */,
+				2033045D23F2865A007C6B64 /* DepositReturnCalculationViewController.swift in Sources */,
 				20D19E9E23F13BBA0051911F /* CalculationViewController.swift in Sources */,
 				20D19EA623F16CD20051911F /* WaterViewController.swift in Sources */,
 				20D19EA023F151D40051911F /* TaxViewController.swift in Sources */,
+				2033046323F2C1E7007C6B64 /* ToCountlyBankViewController.swift in Sources */,
 				20AC4EF223EBF5B6006439C7 /* ViewController.swift in Sources */,
 				20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */,
 				20D19EA423F16C900051911F /* ElectricViewController.swift in Sources */,
+				2033046523F2C6A8007C6B64 /* ToAnotherBankViewController.swift in Sources */,
+				2033045F23F29749007C6B64 /* ContactViewController.swift in Sources */,
 				20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */,
 				20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */,
 				20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */,
@@ -262,8 +290,12 @@
 				20D19EAA23F17A0A0051911F /* InvestmentsViewController.swift in Sources */,
 				20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */,
 				20D19EA823F16CE90051911F /* GasViewController.swift in Sources */,
+				2033046723F2C821007C6B64 /* SwiftViewController.swift in Sources */,
+				2033045B23F285F9007C6B64 /* PersonalFinanceLoanCalculationViewController.swift in Sources */,
 				20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */,
+				2033046123F29808007C6B64 /* DepositRatesViewController.swift in Sources */,
 				20D19EA223F164FC0051911F /* CreditCardPaymentViewController.swift in Sources */,
+				2033045923F2849B007C6B64 /* MarketsViewController.swift in Sources */,
 				2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
