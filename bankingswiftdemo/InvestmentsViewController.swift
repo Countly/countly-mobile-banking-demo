@@ -8,31 +8,37 @@
 
 import UIKit
 import iOSDropDown
+import Countly
 
 class InvestmentsViewController: UIViewController {
 
 
   
     @IBOutlet weak var organizationType: DropDown!
-    
+    var selectedOption : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        Countly.sharedInstance().recordView("InvestmentsView")
         organizationType.optionArray = ["Organization X", "Organization Y", "Organization Z"]
         // The the Closure returns Selected Index and String
         organizationType.didSelect{(selectedText , index ,id) in
         // Do any additional setup after loading the view.
+            self.selectedOption = selectedText
+        }
+
     }
     
+    @IBAction func invest(_ sender: Any) {
+        let dict : Dictionary<String, String> = ["organization": selectedOption]
+                                             Countly.sharedInstance().recordEvent("Investment", segmentation:dict)
+                                              let alert = UIAlertController(title: "Paid", message: "", preferredStyle: .alert)
 
-    /*
-    // MARK: - Navigation
+                                          alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { action in
+                                              self.navigationController?.popViewController(animated: true)
+                                          }))
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                                              self.present(alert, animated: true)
     }
-    */
-
-}
+    
+    
 }

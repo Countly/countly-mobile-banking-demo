@@ -17,6 +17,7 @@
 		2033046323F2C1E7007C6B64 /* ToCountlyBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */; };
 		2033046523F2C6A8007C6B64 /* ToAnotherBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */; };
 		2033046723F2C821007C6B64 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046623F2C821007C6B64 /* SwiftViewController.swift */; };
+		2033046923F2D6CD007C6B64 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033046823F2D6CD007C6B64 /* ProductsViewController.swift */; };
 		2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050C95D23ED4394003CA34D /* TransfersViewController.swift */; };
 		20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */; };
 		20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EEF23EBF5B6006439C7 /* SceneDelegate.swift */; };
@@ -49,6 +50,7 @@
 		2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToCountlyBankViewController.swift; sourceTree = "<group>"; };
 		2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAnotherBankViewController.swift; sourceTree = "<group>"; };
 		2033046623F2C821007C6B64 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		2033046823F2D6CD007C6B64 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		2050C95D23ED4394003CA34D /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
 		20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingswiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */,
 				2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */,
 				2033046623F2C821007C6B64 /* SwiftViewController.swift */,
+				2033046823F2D6CD007C6B64 /* ProductsViewController.swift */,
 			);
 			path = bankingswiftdemo;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */,
 				2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */,
 				20D19EAA23F17A0A0051911F /* InvestmentsViewController.swift in Sources */,
+				2033046923F2D6CD007C6B64 /* ProductsViewController.swift in Sources */,
 				20DC11D323EC5075000C2796 /* MainViewController.swift in Sources */,
 				20D19EA823F16CE90051911F /* GasViewController.swift in Sources */,
 				2033046723F2C821007C6B64 /* SwiftViewController.swift in Sources */,

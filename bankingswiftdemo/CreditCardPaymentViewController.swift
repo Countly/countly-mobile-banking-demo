@@ -8,30 +8,36 @@
 
 import UIKit
 import iOSDropDown
+import Countly
 
 class CreditCardPaymentViewController: UIViewController {
 
 
     @IBOutlet weak var cardType: DropDown!
-    
+    var selectedOption : String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
         cardType.optionArray = ["Card X", "Card Y", "Card Z"]
         // The the Closure returns Selected Index and String
-        cardType.didSelect{(selectedText , index ,id) in
-        // Do any additional setup after loading the view.
+         cardType.didSelect{(selectedText , index ,id) in
+             // Do any additional setup after loading the view.
+                 self.selectedOption = selectedText
+        }
+        Countly.sharedInstance().recordView("CreditCardPaymentView")
+
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBAction func pay(_ sender: Any) {
+        let dict : Dictionary<String, String> = ["type": "Credit Card","card": selectedOption]
+        Countly.sharedInstance().recordEvent("Payment", segmentation:dict)
+                                       let alert = UIAlertController(title: "Paid", message: "", preferredStyle: .alert)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                                   alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { action in
+                                       self.navigationController?.popViewController(animated: true)
+                                   }))
+
+                                       self.present(alert, animated: true)
     }
-    */
-
-}
 }

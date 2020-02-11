@@ -472,6 +472,9 @@
                                 <state key="normal" title="Pay">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="hlD-H8-cH8" eventType="touchUpInside" id="E8D-QI-j91"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkd-NC-5yn">
                                 <rect key="frame" x="49" y="188" width="90" height="21"/>
@@ -548,6 +551,9 @@
                                 <state key="normal" title="Pay">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="VDg-Ms-Khl" eventType="touchUpInside" id="1hd-ny-K5Y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-YY-oSk">
                                 <rect key="frame" x="49" y="212" width="90" height="21"/>
@@ -605,6 +611,9 @@
                                 <state key="normal" title="Pay">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="4Tc-KA-7iP" eventType="touchUpInside" id="pzb-NY-TrW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znn-7I-OJb">
                                 <rect key="frame" x="49" y="198" width="90" height="21"/>
@@ -753,6 +762,9 @@
                                 <state key="normal" title="Pay">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="C0w-8P-lXc" eventType="touchUpInside" id="AmA-O2-LuA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -817,6 +829,9 @@
                                 <state key="normal" title="Pay">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="IBz-Gf-uBY" eventType="touchUpInside" id="Yzu-Q3-h43"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-2C-W1C" customClass="DropDown" customModule="iOSDropDown">
                                 <rect key="frame" x="49" y="145" width="283" height="34"/>
@@ -936,9 +951,12 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
-                                <state key="normal" title="Pay">
+                                <state key="normal" title="Invest">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="invest:" destination="tka-7L-x5J" eventType="touchUpInside" id="Cnl-x4-39W"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
