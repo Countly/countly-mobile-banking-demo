@@ -26,6 +26,9 @@
 		20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20AC4EF623EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld */; };
 		20AC4EFA23EBF5BE006439C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EF923EBF5BE006439C7 /* Assets.xcassets */; };
 		20AC4EFD23EBF5BE006439C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AC4EFB23EBF5BE006439C7 /* LaunchScreen.storyboard */; };
+		20CFD1C323F3D5F300B0AF20 /* CreditCardApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFD1C223F3D5F300B0AF20 /* CreditCardApplicationViewController.swift */; };
+		20CFD1C523F3D64800B0AF20 /* LoanApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFD1C423F3D64800B0AF20 /* LoanApplicationViewController.swift */; };
+		20CFD1C723F3D65C00B0AF20 /* InsuranceApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFD1C623F3D65C00B0AF20 /* InsuranceApplicationViewController.swift */; };
 		20D19E9C23F07AC10051911F /* ApplicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */; };
 		20D19E9E23F13BBA0051911F /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9D23F13BBA0051911F /* CalculationViewController.swift */; };
 		20D19EA023F151D40051911F /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D19E9F23F151D40051911F /* TaxViewController.swift */; };
@@ -61,6 +64,9 @@
 		20AC4EF923EBF5BE006439C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20AC4EFC23EBF5BE006439C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AC4EFE23EBF5BE006439C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CFD1C223F3D5F300B0AF20 /* CreditCardApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardApplicationViewController.swift; sourceTree = "<group>"; };
+		20CFD1C423F3D64800B0AF20 /* LoanApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationViewController.swift; sourceTree = "<group>"; };
+		20CFD1C623F3D65C00B0AF20 /* InsuranceApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceApplicationViewController.swift; sourceTree = "<group>"; };
 		20D19E9B23F07AC10051911F /* ApplicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsViewController.swift; sourceTree = "<group>"; };
 		20D19E9D23F13BBA0051911F /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 		20D19E9F23F151D40051911F /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */,
 				2033046623F2C821007C6B64 /* SwiftViewController.swift */,
 				2033046823F2D6CD007C6B64 /* ProductsViewController.swift */,
+				20CFD1C223F3D5F300B0AF20 /* CreditCardApplicationViewController.swift */,
+				20CFD1C423F3D64800B0AF20 /* LoanApplicationViewController.swift */,
+				20CFD1C623F3D65C00B0AF20 /* InsuranceApplicationViewController.swift */,
 			);
 			path = bankingswiftdemo;
 			sourceTree = "<group>";
@@ -280,6 +289,7 @@
 				20D19E9E23F13BBA0051911F /* CalculationViewController.swift in Sources */,
 				20D19EA623F16CD20051911F /* WaterViewController.swift in Sources */,
 				20D19EA023F151D40051911F /* TaxViewController.swift in Sources */,
+				20CFD1C723F3D65C00B0AF20 /* InsuranceApplicationViewController.swift in Sources */,
 				2033046323F2C1E7007C6B64 /* ToCountlyBankViewController.swift in Sources */,
 				20AC4EF223EBF5B6006439C7 /* ViewController.swift in Sources */,
 				20AC4EF823EBF5B6006439C7 /* bankingswiftdemo.xcdatamodeld in Sources */,
@@ -288,6 +298,7 @@
 				2033045F23F29749007C6B64 /* ContactViewController.swift in Sources */,
 				20AC4EEE23EBF5B6006439C7 /* AppDelegate.swift in Sources */,
 				20AC4EF023EBF5B6006439C7 /* SceneDelegate.swift in Sources */,
+				20CFD1C323F3D5F300B0AF20 /* CreditCardApplicationViewController.swift in Sources */,
 				20DC11D523EC55E4000C2796 /* SideMenuViewController.swift in Sources */,
 				2050C95E23ED4394003CA34D /* TransfersViewController.swift in Sources */,
 				20D19EAA23F17A0A0051911F /* InvestmentsViewController.swift in Sources */,
@@ -301,6 +312,7 @@
 				20D19EA223F164FC0051911F /* CreditCardPaymentViewController.swift in Sources */,
 				2033045923F2849B007C6B64 /* MarketsViewController.swift in Sources */,
 				2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */,
+				20CFD1C523F3D64800B0AF20 /* LoanApplicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
