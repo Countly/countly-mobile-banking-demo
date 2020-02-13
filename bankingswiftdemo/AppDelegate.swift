@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.features = [CLYCrashReporting,CLYPushNotifications]
         config.enableDebug = true
         config.enableRemoteConfig = true
-        config.sendPushTokenAlways = true
         Countly.sharedInstance().start(with: config)
         Countly.sharedInstance().askForNotificationPermission()
 
