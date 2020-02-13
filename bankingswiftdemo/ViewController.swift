@@ -11,6 +11,7 @@ import Countly
 class ViewController: UIViewController {
 
    
+    
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var customerID: UITextField!
     @IBOutlet weak var atmButton: UIButton!
@@ -27,6 +28,8 @@ class ViewController: UIViewController {
         Countly.sharedInstance().startEvent("LoginOperation")
         Countly.sharedInstance().recordView("LoginView")
     }
+    
+
 
     @objc func didButtonClick(_ sender: UIButton) {
         if(sender === applicationsButton){
@@ -71,6 +74,8 @@ class ViewController: UIViewController {
         }
         
     }
+    
+   
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

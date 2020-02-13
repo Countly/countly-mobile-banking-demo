@@ -9,4 +9,6 @@ target 'bankingswiftdemo' do
   pod ‘SideMenu’
   pod 'iOSDropDown'
   pod 'Countly'
+  pod 'IQKeyboardManagerSwift'
+
 end

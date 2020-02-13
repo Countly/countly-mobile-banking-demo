@@ -19,8 +19,8 @@ class DepositReturnCalculationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    Countly.sharedInstance().recordView("DepositReturnCalculationView")
+
+        Countly.sharedInstance().recordView("DepositReturnCalculationView")
     }
     
     @IBAction func calculate(_ sender: Any) {

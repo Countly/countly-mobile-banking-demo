@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Countly
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        IQKeyboardManager.shared.enable = true
+
         let config: CountlyConfig = CountlyConfig()
         config.appKey = "14e5e961d09e0ee0bfa7b2e0b8179675466fa010"
         config.host = "https://try.count.ly"
-        config.features = [CLYCrashReporting]
+        config.features = [CLYCrashReporting,CLYPushNotifications]
         config.enableDebug = true
         config.enableRemoteConfig = true
+        config.sendPushTokenAlways = true
         Countly.sharedInstance().start(with: config)
+        Countly.sharedInstance().askForNotificationPermission()
 
         return true
     }
