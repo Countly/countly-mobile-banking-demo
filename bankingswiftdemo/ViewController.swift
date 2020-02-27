@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @objc func didButtonClick(_ sender: UIButton) {
         if(sender === applicationsButton){
             Countly.sharedInstance().recordView("ApplicationsView")
-            if let url = URL(string: "https://ickarakurt.gitlab.io/countly-banking-demo/"), UIApplication.shared.canOpenURL(url) {
+            if let url = URL(string: "https://banking-demo.tools.count.ly/internet-banking/login"), UIApplication.shared.canOpenURL(url) {
                if #available(iOS 10.0, *) {
                   UIApplication.shared.open(url, options: [:], completionHandler: nil)
                } else {
@@ -45,6 +45,21 @@ class ViewController: UIViewController {
                 if customerID.text == "demo" {
                     if password.text == "demo" {
                         Countly.sharedInstance().endEvent("LoginOperation")
+                        Countly.user().name = "John Doe" as CountlyUserDetailsNullableString
+                        Countly.user().username = "johndoe" as CountlyUserDetailsNullableString
+                        Countly.user().email = "john@doe.com" as CountlyUserDetailsNullableString
+                        Countly.user().birthYear = 1970 as CountlyUserDetailsNullableNumber
+                        Countly.user().organization = "United Nations" as CountlyUserDetailsNullableString
+                        Countly.user().gender = "M" as CountlyUserDetailsNullableString
+                        Countly.user().phone = "+0123456789" as CountlyUserDetailsNullableString
+                        Countly.sharedInstance().setNewDeviceID("new_device_id", onServer:true)
+
+                        //profile photo
+                        Countly.user().pictureURL = "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" as CountlyUserDetailsNullableString
+                        //custom properties
+                        Countly.user().custom = ["testkey1":"testvalue1","testkey2":"testvalue2"] as CountlyUserDetailsNullableDictionary
+
+                        Countly.user().save()
                         performSegue(withIdentifier: "toMainView", sender: nil)
                     }else{
                         let dict : Dictionary<String, String> = ["customerID": customerID.text ?? ""]
@@ -63,7 +78,7 @@ class ViewController: UIViewController {
                 }
                }else if(sender === atmButton){
                 Countly.sharedInstance().recordView("ATMView")
-               if let url = URL(string: "https://ickarakurt.gitlab.io/atm/"), UIApplication.shared.canOpenURL(url) {
+               if let url = URL(string: "https://banking-demo.tools.count.ly/internet-banking/atm/"), UIApplication.shared.canOpenURL(url) {
                   if #available(iOS 10.0, *) {
                      UIApplication.shared.open(url, options: [:], completionHandler: nil)
                   } else {

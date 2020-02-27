@@ -11,10 +11,28 @@ import Countly
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var mainPageText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true;
         Countly.sharedInstance().recordView("MainView")
+        
+        Countly.sharedInstance().updateRemoteConfig
+            { (error : Error?) in
+                if (error == nil)
+                {
+                     let mainPageText : Any? = Countly.sharedInstance().remoteConfigValue(forKey:"mainPageMessage")
+                   self.mainPageText.text = String(describing: (mainPageText ?? ""))
+                   
+            
+                }
+                else
+                {
+                    print("There was an error while fetching Remote Config:\n\(error!.localizedDescription)")
+                }
+            }
+        
+        
     }
     
 
@@ -28,4 +46,23 @@ class MainViewController: UIViewController {
     }
     */
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        Countly.sharedInstance().updateRemoteConfig
+            { (error : Error?) in
+                if (error == nil)
+                {
+                     let mainPageText : Any? = Countly.sharedInstance().remoteConfigValue(forKey:"mainPageMessage")
+                   self.mainPageText.text = String(describing: (mainPageText ?? ""))
+                   
+            
+                }
+                else
+                {
+                    print("There was an error while fetching Remote Config:\n\(error!.localizedDescription)")
+                }
+            }
+        
+    }
+    
 }

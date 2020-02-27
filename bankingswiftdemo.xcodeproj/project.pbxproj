@@ -55,7 +55,7 @@
 		2033046623F2C821007C6B64 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		2033046823F2D6CD007C6B64 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		2050C95D23ED4394003CA34D /* TransfersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersViewController.swift; sourceTree = "<group>"; };
-		20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingswiftdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AC4EEA23EBF5B6006439C7 /* Countly Banking Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countly Banking Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AC4EED23EBF5B6006439C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20AC4EEF23EBF5B6006439C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		20AC4EF123EBF5B6006439C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		20AC4EEB23EBF5B6006439C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */,
+				20AC4EEA23EBF5B6006439C7 /* Countly Banking Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			);
 			name = bankingswiftdemo;
 			productName = bankingswiftdemo;
-			productReference = 20AC4EEA23EBF5B6006439C7 /* bankingswiftdemo.app */;
+			productReference = 20AC4EEA23EBF5B6006439C7 /* Countly Banking Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -469,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ly.count.DemoMobileBanking;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Countly Banking Demo";
 				PROVISIONING_PROFILE_SPECIFIER = iOS_Development_DemoMobileBanking_20200213;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ly.count.DemoMobileBanking;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Countly Banking Demo";
 				PROVISIONING_PROFILE_SPECIFIER = iOS_Development_DemoMobileBanking_20200213;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

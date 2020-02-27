@@ -10,19 +10,21 @@ import UIKit
 import CoreData
 import Countly
 import IQKeyboardManagerSwift
-
+import SideMenu
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        Thread.sleep(forTimeInterval: 2.0)
         
         IQKeyboardManager.shared.enable = true
 
         let config: CountlyConfig = CountlyConfig()
-        config.appKey = "14e5e961d09e0ee0bfa7b2e0b8179675466fa010"
-        config.host = "https://try.count.ly"
+        config.appKey = "7d45543c2e2989f99957c794647a96c73bb0cd13"
+        config.host = "https://demo.count.ly"
         config.features = [CLYCrashReporting,CLYPushNotifications]
         config.enableDebug = true
         config.enableRemoteConfig = true

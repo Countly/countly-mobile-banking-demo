@@ -18,7 +18,8 @@ class CalculationViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         tableView.delegate = self;
         tableView.dataSource = self;
-    Countly.sharedInstance().recordView("CalculationView")
+        Countly.sharedInstance().recordView("CalculationView");
+        tableView.tableFooterView = UIView()
     }
     
     

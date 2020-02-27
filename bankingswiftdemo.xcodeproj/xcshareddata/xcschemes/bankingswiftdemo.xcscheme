@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "20AC4EE923EBF5B6006439C7"
-               BuildableName = "bankingswiftdemo.app"
+               BuildableName = "Countly Banking Demo.app"
                BlueprintName = "bankingswiftdemo"
                ReferencedContainer = "container:bankingswiftdemo.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20AC4EE923EBF5B6006439C7"
-            BuildableName = "bankingswiftdemo.app"
+            BuildableName = "Countly Banking Demo.app"
             BlueprintName = "bankingswiftdemo"
             ReferencedContainer = "container:bankingswiftdemo.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20AC4EE923EBF5B6006439C7"
-            BuildableName = "bankingswiftdemo.app"
+            BuildableName = "Countly Banking Demo.app"
             BlueprintName = "bankingswiftdemo"
             ReferencedContainer = "container:bankingswiftdemo.xcodeproj">
          </BuildableReference>

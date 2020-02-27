@@ -13,9 +13,11 @@ class ApplicationsViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {        super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.tableFooterView = UIView()
     }
     
     
