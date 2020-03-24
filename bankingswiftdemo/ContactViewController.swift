@@ -27,5 +27,20 @@ class ContactViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func contactSend(_ sender: Any) {
+        Countly.sharedInstance().recordEvent("ContactFormSent")
+        
+        
+            let alert = UIAlertController(title: "Sent", message: "", preferredStyle: .alert)
 
+                 alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { action in
+                     self.navigationController?.popViewController(animated: true)
+                 }))
+
+                     self.present(alert, animated: true)
+        
+        
+        
+    }
+    
 }
