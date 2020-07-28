@@ -17,9 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var customerID: UITextField!
     @IBOutlet weak var applicationsButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         navigationItem.hidesBackButton = true;
         view.backgroundColor =  UIColor.white
         applicationsButton.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
@@ -27,13 +28,22 @@ class ViewController: UIViewController {
        
        
         contactButton.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
-              Countly.sharedInstance().startEvent("LoginOperation")
+        Countly.sharedInstance().startEvent("LoginOperation")
         Countly.sharedInstance().recordView("LoginView")
+   
     }
     
 
 
     @objc func didButtonClick(_ sender: UIButton) {
+
+        Countly.user().custom = ["Has Active Internet Banking":false] as CountlyUserDetailsNullableDictionary
+           Countly.user().custom = ["Has Credit Card":true] as CountlyUserDetailsNullableDictionary
+           Countly.user().custom = ["Has Investment":true] as CountlyUserDetailsNullableDictionary
+           Countly.user().custom = ["Has Loan":true] as CountlyUserDetailsNullableDictionary
+           Countly.user().custom = ["QR":true] as CountlyUserDetailsNullableDictionary
+
+           Countly.user().save()
         if(sender === applicationsButton){
             Countly.sharedInstance().recordView("ApplicationsView")
             if let url = URL(string: "https://demo.count.ly/at/9963384634a5b8e0feb0ea6ef1652f82fa56b9c4"), UIApplication.shared.canOpenURL(url) {
@@ -44,40 +54,12 @@ class ViewController: UIViewController {
                }
             }
         }else if(sender === signInButton){
-                if customerID.text == "demo" {
-                    if password.text == "demo" {
-                        Countly.sharedInstance().endEvent("LoginOperation")
-                        Countly.user().name = "John Doe" as CountlyUserDetailsNullableString
-                        Countly.user().username = "johndoe" as CountlyUserDetailsNullableString
-                        Countly.user().email = "john@doe.com" as CountlyUserDetailsNullableString
-                        Countly.user().birthYear = 1970 as CountlyUserDetailsNullableNumber
-                        Countly.user().organization = "United Nations" as CountlyUserDetailsNullableString
-                        Countly.user().gender = "M" as CountlyUserDetailsNullableString
-                        Countly.user().phone = "+0123456789" as CountlyUserDetailsNullableString
-                        Countly.sharedInstance().setNewDeviceID("new_device_id", onServer:true)
-
-                        //profile photo
-                        Countly.user().pictureURL = "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" as CountlyUserDetailsNullableString
-                        //custom properties
-                        Countly.user().custom = ["testkey1":"testvalue1","testkey2":"testvalue2"] as CountlyUserDetailsNullableDictionary
-
-                        Countly.user().save()
-                        performSegue(withIdentifier: "toMainView", sender: nil)
-                    }else{
-                        let dict : Dictionary<String, String> = ["customerID": customerID.text ?? ""]
-                        Countly.sharedInstance().recordEvent("wrongPassword", segmentation:dict)
-                        let alert = UIAlertController(title: "Incorrect password !", message: "Please check your password", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
-                        self.present(alert, animated: true)
-                    }
-                }else{
-                    let dict : Dictionary<String, String> = ["customerID": customerID.text ?? ""]
-                    Countly.sharedInstance().recordEvent("wrongCustomerID", segmentation:dict)
-                    let alert = UIAlertController(title: "Incorrect customerID !", message: "Please check your customer ID", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true)
-
-                }
+            
+            DispatchQueue.main.async{
+                                              self.performSegue(withIdentifier: "toMainView", sender: nil)
+                                          }
+            //signInButtonClicked();
+            
                }else if(sender === contactButton){
             let contact_type  = Countly.sharedInstance().remoteConfigValue(forKey:"contact_type");
             if(contact_type as! Int == 0){
@@ -105,7 +87,79 @@ class ViewController: UIViewController {
         
     }
     
+
+    
+    private func signInButtonClicked(){
+        
+        if(customerID.text?.trim() == "" || password.text?.trim() == "" ){
+            DispatchQueue.main.async {
+                self.wrongLoginData()
+            }
+        }else{
+            // Prepare URL
+                   let url = URL(string: "https://api.banking-demo.tools.count.ly/user/login")
+                   guard let requestUrl = url else { fatalError() }
+                   // Prepare URL Request Object
+                   var request = URLRequest(url: requestUrl)
+                   request.httpMethod = "POST"
+                    
+                   // HTTP Request Parameters which will be sent in HTTP Request Body
+                   let postString = "customerID=" + (customerID.text)! + "&password=" + (password.text)!;
+                   // Set HTTP Request Body
+                   request.httpBody = postString.data(using: String.Encoding.utf8);
+                   // Perform HTTP Request
+                   let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                           
+                           // Check for Error
+                           if let error = error {
+                               print("Error took place \(error)")
+                               return
+                           }
+                    
+                           // Convert HTTP Response Data to a String
+                           if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                               let dict = dataString.toJSON() as? [String:AnyObject]
+                               if((dict?["status"] as? Int) == 0){
+                                   DispatchQueue.main.async {
+                                   self.wrongLoginData()
+                                   }
+                               }else{
+                                DispatchQueue.main.async{
+                                   self.performSegue(withIdentifier: "toMainView", sender: nil)
+                               }
+                            }
+                           }
+                   }
+                   task.resume()
+            
+        }
+        
+    
+
+    }
+    
+    
+    private func wrongLoginData(){
+        let alert = UIAlertController(title: "Incorrect customerID !", message: "Please check your customer ID", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true)
+    }
+
+    private func correctLoginData(dict : Dictionary<String,AnyObject>){
    
+        Countly.sharedInstance().endEvent("LoginOperation")
+   
+        Countly.user().name = dict["name"] as? CountlyUserDetailsNullableString
+        Countly.user().username = dict["name"] as? CountlyUserDetailsNullableString
+        Countly.user().email = dict["email"] as? CountlyUserDetailsNullableString
+        Countly.user().birthYear = dict["byear"] as? CountlyUserDetailsNullableNumber
+        Countly.user().gender = dict["gender"] as? CountlyUserDetailsNullableString
+        Countly.user().phone = dict["phone"] as? CountlyUserDetailsNullableString
+        Countly.sharedInstance().setNewDeviceID(dict["customerID"] as? String, onServer:true)
+        Countly.user().pictureURL = dict["picture"] as? CountlyUserDetailsNullableString
+        Countly.user().save()
+ 
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -131,5 +185,28 @@ class ViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
    
+
 }
 
+
+extension String {
+    func toJSON() -> Any? {
+        guard let data = self.data(using: .utf8, allowLossyConversion: false) else { return nil }
+        return try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+    }
+}
+
+extension String
+{
+    func trim() -> String
+   {
+    return self.trimmingCharacters(in: NSCharacterSet.whitespaces)
+   }
+}
+
+extension UIButton {
+open override var isHighlighted: Bool {
+    didSet {
+        super.isHighlighted = false
+    }
+}}

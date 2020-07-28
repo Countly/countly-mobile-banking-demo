@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202CE95D24CF4326004AA218 /* GraphikMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94A24CF4322004AA218 /* GraphikMedium.otf */; };
+		202CE95E24CF4326004AA218 /* GraphikSuperItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94B24CF4323004AA218 /* GraphikSuperItalic.otf */; };
+		202CE95F24CF4326004AA218 /* GraphikSemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94C24CF4323004AA218 /* GraphikSemiboldItalic.otf */; };
+		202CE96024CF4326004AA218 /* GraphikExtralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94D24CF4323004AA218 /* GraphikExtralight.otf */; };
+		202CE96124CF4326004AA218 /* GraphikBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94E24CF4323004AA218 /* GraphikBlack.otf */; };
+		202CE96224CF4326004AA218 /* GraphikLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE94F24CF4323004AA218 /* GraphikLightItalic.otf */; };
+		202CE96324CF4326004AA218 /* GraphikSuper.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95024CF4324004AA218 /* GraphikSuper.otf */; };
+		202CE96424CF4326004AA218 /* GraphikThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95124CF4324004AA218 /* GraphikThinItalic.otf */; };
+		202CE96524CF4326004AA218 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95224CF4324004AA218 /* Inter-VariableFont_slnt,wght.ttf */; };
+		202CE96624CF4326004AA218 /* GraphikSemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95324CF4324004AA218 /* GraphikSemibold.otf */; };
+		202CE96724CF4326004AA218 /* GraphikThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95424CF4324004AA218 /* GraphikThin.otf */; };
+		202CE96824CF4326004AA218 /* GraphikBlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95524CF4325004AA218 /* GraphikBlackItalic.otf */; };
+		202CE96924CF4326004AA218 /* GraphikBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95624CF4325004AA218 /* GraphikBold.otf */; };
+		202CE96A24CF4326004AA218 /* GraphikRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95724CF4325004AA218 /* GraphikRegular.otf */; };
+		202CE96B24CF4326004AA218 /* GraphikMediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95824CF4325004AA218 /* GraphikMediumItalic.otf */; };
+		202CE96C24CF4326004AA218 /* GraphikBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95924CF4326004AA218 /* GraphikBoldItalic.otf */; };
+		202CE96D24CF4326004AA218 /* GraphikLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95A24CF4326004AA218 /* GraphikLight.otf */; };
+		202CE96E24CF4326004AA218 /* GraphikExtralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95B24CF4326004AA218 /* GraphikExtralightItalic.otf */; };
+		202CE96F24CF4326004AA218 /* GraphikRegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 202CE95C24CF4326004AA218 /* GraphikRegularItalic.otf */; };
 		2031926723ED86AD00E47747 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926623ED86AD00E47747 /* PaymentsViewController.swift */; };
 		2031926923ED87F300E47747 /* UtilPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */; };
 		2033045923F2849B007C6B64 /* MarketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033045823F2849B007C6B64 /* MarketsViewController.swift */; };
@@ -45,6 +64,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		202CE94A24CF4322004AA218 /* GraphikMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikMedium.otf; path = fonts/GraphikMedium.otf; sourceTree = "<group>"; };
+		202CE94B24CF4323004AA218 /* GraphikSuperItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikSuperItalic.otf; path = fonts/GraphikSuperItalic.otf; sourceTree = "<group>"; };
+		202CE94C24CF4323004AA218 /* GraphikSemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikSemiboldItalic.otf; path = fonts/GraphikSemiboldItalic.otf; sourceTree = "<group>"; };
+		202CE94D24CF4323004AA218 /* GraphikExtralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikExtralight.otf; path = fonts/GraphikExtralight.otf; sourceTree = "<group>"; };
+		202CE94E24CF4323004AA218 /* GraphikBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikBlack.otf; path = fonts/GraphikBlack.otf; sourceTree = "<group>"; };
+		202CE94F24CF4323004AA218 /* GraphikLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikLightItalic.otf; path = fonts/GraphikLightItalic.otf; sourceTree = "<group>"; };
+		202CE95024CF4324004AA218 /* GraphikSuper.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikSuper.otf; path = fonts/GraphikSuper.otf; sourceTree = "<group>"; };
+		202CE95124CF4324004AA218 /* GraphikThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikThinItalic.otf; path = fonts/GraphikThinItalic.otf; sourceTree = "<group>"; };
+		202CE95224CF4324004AA218 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-VariableFont_slnt,wght.ttf"; path = "fonts/Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		202CE95324CF4324004AA218 /* GraphikSemibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikSemibold.otf; path = fonts/GraphikSemibold.otf; sourceTree = "<group>"; };
+		202CE95424CF4324004AA218 /* GraphikThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikThin.otf; path = fonts/GraphikThin.otf; sourceTree = "<group>"; };
+		202CE95524CF4325004AA218 /* GraphikBlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikBlackItalic.otf; path = fonts/GraphikBlackItalic.otf; sourceTree = "<group>"; };
+		202CE95624CF4325004AA218 /* GraphikBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikBold.otf; path = fonts/GraphikBold.otf; sourceTree = "<group>"; };
+		202CE95724CF4325004AA218 /* GraphikRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikRegular.otf; path = fonts/GraphikRegular.otf; sourceTree = "<group>"; };
+		202CE95824CF4325004AA218 /* GraphikMediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikMediumItalic.otf; path = fonts/GraphikMediumItalic.otf; sourceTree = "<group>"; };
+		202CE95924CF4326004AA218 /* GraphikBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikBoldItalic.otf; path = fonts/GraphikBoldItalic.otf; sourceTree = "<group>"; };
+		202CE95A24CF4326004AA218 /* GraphikLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikLight.otf; path = fonts/GraphikLight.otf; sourceTree = "<group>"; };
+		202CE95B24CF4326004AA218 /* GraphikExtralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikExtralightItalic.otf; path = fonts/GraphikExtralightItalic.otf; sourceTree = "<group>"; };
+		202CE95C24CF4326004AA218 /* GraphikRegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GraphikRegularItalic.otf; path = fonts/GraphikRegularItalic.otf; sourceTree = "<group>"; };
 		2031926623ED86AD00E47747 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2031926823ED87F300E47747 /* UtilPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilPaymentsViewController.swift; sourceTree = "<group>"; };
 		2033045823F2849B007C6B64 /* MarketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +187,25 @@
 				2033046023F29808007C6B64 /* DepositRatesViewController.swift */,
 				2033046223F2C1E7007C6B64 /* ToCountlyBankViewController.swift */,
 				2033046423F2C6A8007C6B64 /* ToAnotherBankViewController.swift */,
+				202CE94E24CF4323004AA218 /* GraphikBlack.otf */,
+				202CE95524CF4325004AA218 /* GraphikBlackItalic.otf */,
+				202CE95624CF4325004AA218 /* GraphikBold.otf */,
+				202CE95924CF4326004AA218 /* GraphikBoldItalic.otf */,
+				202CE94D24CF4323004AA218 /* GraphikExtralight.otf */,
+				202CE95B24CF4326004AA218 /* GraphikExtralightItalic.otf */,
+				202CE95A24CF4326004AA218 /* GraphikLight.otf */,
+				202CE94F24CF4323004AA218 /* GraphikLightItalic.otf */,
+				202CE94A24CF4322004AA218 /* GraphikMedium.otf */,
+				202CE95824CF4325004AA218 /* GraphikMediumItalic.otf */,
+				202CE95724CF4325004AA218 /* GraphikRegular.otf */,
+				202CE95C24CF4326004AA218 /* GraphikRegularItalic.otf */,
+				202CE95324CF4324004AA218 /* GraphikSemibold.otf */,
+				202CE94C24CF4323004AA218 /* GraphikSemiboldItalic.otf */,
+				202CE95024CF4324004AA218 /* GraphikSuper.otf */,
+				202CE94B24CF4323004AA218 /* GraphikSuperItalic.otf */,
+				202CE95424CF4324004AA218 /* GraphikThin.otf */,
+				202CE95124CF4324004AA218 /* GraphikThinItalic.otf */,
+				202CE95224CF4324004AA218 /* Inter-VariableFont_slnt,wght.ttf */,
 				2033046623F2C821007C6B64 /* SwiftViewController.swift */,
 				2033046823F2D6CD007C6B64 /* ProductsViewController.swift */,
 				20CFD1C223F3D5F300B0AF20 /* CreditCardApplicationViewController.swift */,
@@ -237,9 +294,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202CE96E24CF4326004AA218 /* GraphikExtralightItalic.otf in Resources */,
 				20AC4EFD23EBF5BE006439C7 /* LaunchScreen.storyboard in Resources */,
+				202CE96B24CF4326004AA218 /* GraphikMediumItalic.otf in Resources */,
 				20AC4EFA23EBF5BE006439C7 /* Assets.xcassets in Resources */,
+				202CE96124CF4326004AA218 /* GraphikBlack.otf in Resources */,
+				202CE96F24CF4326004AA218 /* GraphikRegularItalic.otf in Resources */,
+				202CE96424CF4326004AA218 /* GraphikThinItalic.otf in Resources */,
+				202CE96D24CF4326004AA218 /* GraphikLight.otf in Resources */,
+				202CE96524CF4326004AA218 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
+				202CE96C24CF4326004AA218 /* GraphikBoldItalic.otf in Resources */,
+				202CE96724CF4326004AA218 /* GraphikThin.otf in Resources */,
+				202CE95E24CF4326004AA218 /* GraphikSuperItalic.otf in Resources */,
 				20AC4EF523EBF5B6006439C7 /* Main.storyboard in Resources */,
+				202CE95D24CF4326004AA218 /* GraphikMedium.otf in Resources */,
+				202CE96024CF4326004AA218 /* GraphikExtralight.otf in Resources */,
+				202CE96824CF4326004AA218 /* GraphikBlackItalic.otf in Resources */,
+				202CE96224CF4326004AA218 /* GraphikLightItalic.otf in Resources */,
+				202CE96324CF4326004AA218 /* GraphikSuper.otf in Resources */,
+				202CE96924CF4326004AA218 /* GraphikBold.otf in Resources */,
+				202CE96A24CF4326004AA218 /* GraphikRegular.otf in Resources */,
+				202CE96624CF4326004AA218 /* GraphikSemibold.otf in Resources */,
+				202CE95F24CF4326004AA218 /* GraphikSemiboldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

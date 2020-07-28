@@ -8,42 +8,14 @@
 
 import UIKit
 
-class TransfersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TransfersViewController: UIViewController{
 
     
-    @IBOutlet weak var tableView: UITableView!
     
-    
-    override func viewDidLoad() {        super.viewDidLoad()
-        tableView.delegate = self;
-        tableView.dataSource = self;
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    
-    
-    var links: [String] = ["To Countly Bank","To Another Bank","SWIFT"]
-    var identifiers: [String] = ["toWireTransferView","toEftView","toSwiftView"]
 
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return links.count
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = UITableViewCell()
-        cell.textLabel?.text = links[indexPath.row]
-        return cell
-        
-    }
-    
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let identifier : String = identifiers[indexPath.row];
-           performSegue(withIdentifier: identifier, sender: nil)
-
-    }
-    
     
 
 

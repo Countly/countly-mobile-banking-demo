@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.enableDebug = true
         config.enableRemoteConfig = true
         config.requiresConsent = true;
+        config.updateSessionPeriod = 5 ;
+        config.starRatingMessage = "Please rate our app?"
         config.pushTestMode = CLYPushTestModeTestFlightOrAdHoc
         Countly.sharedInstance().start(with: config)
         Countly.sharedInstance().askForNotificationPermission()

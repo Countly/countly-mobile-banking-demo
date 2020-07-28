@@ -18,7 +18,7 @@ class ToCountlyBankViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Countly.sharedInstance().recordView("ToCountlyBankView")
-     
+        Countly.sharedInstance().startEvent("ToCountlyBankTransferOperation")
         // Do any additional setup after loading the view.
     }
     
@@ -34,14 +34,22 @@ class ToCountlyBankViewController: UIViewController {
     */
     @IBAction func send(_ sender: Any) {
         let dict : Dictionary<String, String> = ["type": "ToCountlyBank"]
+        Countly.sharedInstance().endEvent("ToCountlyBankTransferOperation")
+
            Countly.sharedInstance().recordEvent("Transfer", segmentation:dict)
             let alert = UIAlertController(title: "Money Sent", message: "", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { action in
-            self.navigationController?.popViewController(animated: true)
+            Countly.sharedInstance().ask(forStarRating:{ (rating : Int) in
+                            self.navigationController?.popViewController(animated: true)
+
+                
+            })
+
         }))
 
             self.present(alert, animated: true)
+
     }
     
 }
