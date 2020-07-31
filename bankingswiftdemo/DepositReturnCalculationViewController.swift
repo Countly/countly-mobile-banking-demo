@@ -13,16 +13,22 @@ class DepositReturnCalculationViewController: UIViewController {
 
     
     @IBOutlet weak var answer: UILabel!
+  
     @IBOutlet weak var amount: UITextField!
+    
     @IBOutlet weak var term: UITextField!
+    
+    
     @IBOutlet weak var rate: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Calculation"
         Countly.sharedInstance().recordView("DepositReturnCalculationView")
     }
     
+   
     @IBAction func calculate(_ sender: Any) {
         if let amount = self.amount.text,  let amountDouble = Double(amount) {
                 if let term = self.term.text,  let termDouble = Double(term) {

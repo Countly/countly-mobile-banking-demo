@@ -13,7 +13,7 @@ class CreditCardApplicationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Credit Card Application"
         Countly.sharedInstance().recordView("CreditCardApplicationView")
     }
     

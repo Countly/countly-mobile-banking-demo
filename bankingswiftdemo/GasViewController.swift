@@ -18,6 +18,7 @@ class GasViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Gas Payment"
         Countly.sharedInstance().recordView("GasView")
         companyType.optionArray = ["Company X", "Company Y", "Company Z"]
         // The the Closure returns Selected Index and String

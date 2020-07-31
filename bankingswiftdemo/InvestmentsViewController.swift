@@ -13,11 +13,12 @@ import Countly
 class InvestmentsViewController: UIViewController {
 
 
-  
     @IBOutlet weak var organizationType: DropDown!
+    
     var selectedOption : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Investments"
         Countly.sharedInstance().recordView("InvestmentsView")
         organizationType.optionArray = ["Organization X", "Organization Y", "Organization Z"]
         // The the Closure returns Selected Index and String

@@ -18,7 +18,8 @@ class CampaignsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       self.navigationItem.title = "Campaigns"
+
     }
     
 

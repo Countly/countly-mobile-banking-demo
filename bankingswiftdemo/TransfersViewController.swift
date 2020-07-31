@@ -14,6 +14,8 @@ class TransfersViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Transfers"
+
     }
 
     

@@ -13,94 +13,51 @@ class ConsentsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Settings"
         Countly.sharedInstance().recordView("SettingsView")
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func sessionsSwitchChanged(_ sender: UISwitch) {
+    
+    @IBAction func behaviourChange(_ sender: UISwitch) {
         if(sender.isOn){
-            Countly.sharedInstance().giveConsent(forFeature: CLYConsentSessions)
+                               
+            Countly.sharedInstance().giveConsent(forFeatures: [CLYConsentSessions, CLYConsentUserDetails, CLYConsentViewTracking, CLYConsentEvents,CLYConsentCrashReporting])
+
+            }else{
+                 Countly.sharedInstance().cancelConsent(forFeatures: [CLYConsentSessions, CLYConsentUserDetails, CLYConsentViewTracking, CLYConsentEvents,CLYConsentCrashReporting])
+            }
+                      
+    }
+    
+    @IBAction func engagementChange(_ sender: UISwitch) {
+        if(sender.isOn){
+                           
+        Countly.sharedInstance().giveConsent(forFeatures: [CLYConsentPushNotifications,CLYConsentAttribution])
+
         }else{
-            Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentSessions)
+             Countly.sharedInstance().cancelConsent(forFeatures: [CLYConsentPushNotifications,CLYConsentAttribution])
         }
-
-    }
-    @IBAction func eventsSwitchChanged(_ sender: UISwitch) {
-        if(sender.isOn){
-                  Countly.sharedInstance().giveConsent(forFeature: CLYConsentEvents)
-              }else{
-                  Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentEvents)
-              }
-        
-    }
-    @IBAction func usersSwitchChanged(_ sender: UISwitch) {
-        if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentUserDetails)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentUserDetails)
-                     }
-               
-    }
-    @IBAction func crashesSwitchChanged(_ sender: UISwitch) {
-        if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentCrashReporting)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentCrashReporting)
-                     }
-               
-    }
-    @IBAction func pushSwitchChanged(_ sender: UISwitch) {
-        if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentPushNotifications)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentPushNotifications)
-                     }
-               
-    }
-    @IBAction func locationSwitchChanged(_ sender: UISwitch) {
-        if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentLocation)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentLocation)
-                     }
-               
-    }
-    @IBAction func viewSwitchChanged(_ sender: UISwitch) {
-         if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentViewTracking)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentViewTracking)
-                     }
-
-
+             
     }
     
-    @IBAction func attributionSwitchChanged(_ sender: UISwitch) {
+    
+    @IBAction func contextChange(_ sender: UISwitch) {
         if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentAttribution)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentAttribution)
-                     }
-               
+            Countly.sharedInstance().giveConsent(forFeatures: [CLYConsentLocation])
+       }else{
+            Countly.sharedInstance().cancelConsent(forFeatures: [CLYConsentLocation])
+       }
     }
     
-    @IBAction func starRatingSwitchChanged(_ sender: UISwitch) {
+    
+    @IBAction func voiceOfCustomerChange(_ sender: UISwitch) {
         if(sender.isOn){
-                         Countly.sharedInstance().giveConsent(forFeature: CLYConsentStarRating)
-                     }else{
-                         Countly.sharedInstance().cancelConsent(forFeature:  CLYConsentStarRating)
-                     }
-               
+                  Countly.sharedInstance().giveConsent(forFeatures: [CLYConsentStarRating])
+             }else{
+                  Countly.sharedInstance().cancelConsent(forFeatures: [CLYConsentStarRating])
+             }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

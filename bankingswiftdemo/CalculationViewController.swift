@@ -14,6 +14,7 @@ class CalculationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Calculation"
         Countly.sharedInstance().recordView("CalculationView");
     }
     

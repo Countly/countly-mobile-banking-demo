@@ -17,6 +17,7 @@ class ToCountlyBankViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "To CoBank"
         Countly.sharedInstance().recordView("ToCountlyBankView")
         Countly.sharedInstance().startEvent("ToCountlyBankTransferOperation")
         // Do any additional setup after loading the view.

@@ -18,6 +18,7 @@ class CreditCardPaymentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Credit Card Payment"
         cardType.optionArray = ["Card X", "Card Y", "Card Z"]
         // The the Closure returns Selected Index and String
          cardType.didSelect{(selectedText , index ,id) in

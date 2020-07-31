@@ -13,6 +13,7 @@ class ProductsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Products"
         Countly.sharedInstance().recordView("ProductsView")
         // Do any additional setup after loading the view.
     }

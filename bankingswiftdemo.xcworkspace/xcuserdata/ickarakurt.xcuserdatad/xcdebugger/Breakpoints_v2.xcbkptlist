@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "78421117-03A2-4475-8001-241F272C9796"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bankingswiftdemo/AppDelegate.swift"
@@ -16,8 +16,148 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "78421117-03A2-4475-8001-241F272C9796 - e52ecdbac209d407"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.__allocating_init() -&gt; Countly_Banking_Demo.AppDelegate"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "78421117-03A2-4475-8001-241F272C9796 - 1b40638ba39bdcf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.init() -&gt; Countly_Banking_Demo.AppDelegate"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "78421117-03A2-4475-8001-241F272C9796 - e6ca1306e2e78e26"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.__deallocating_deinit"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "78421117-03A2-4475-8001-241F272C9796 - c7610a9e5c973e25"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68162A40-B949-4635-9930-D230ED1A1786"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bankingswiftdemo/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "AppDelegate"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "68162A40-B949-4635-9930-D230ED1A1786 - e52ecdbac209d407"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.__allocating_init() -&gt; Countly_Banking_Demo.AppDelegate"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "68162A40-B949-4635-9930-D230ED1A1786 - 1b40638ba39bdcf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.init() -&gt; Countly_Banking_Demo.AppDelegate"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "68162A40-B949-4635-9930-D230ED1A1786 - e6ca1306e2e78e26"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Countly_Banking_Demo.AppDelegate.__deallocating_deinit"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "68162A40-B949-4635-9930-D230ED1A1786 - c7610a9e5c973e25"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Countly Banking Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ickarakurt/Desktop/countly-mobile-banking-demo/bankingswiftdemo/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

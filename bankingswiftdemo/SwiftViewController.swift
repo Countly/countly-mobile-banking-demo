@@ -17,6 +17,7 @@ class SwiftViewController: UIViewController {
     @IBOutlet weak var iban: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Swift"
         Countly.sharedInstance().recordView("SwiftView")
     }
     

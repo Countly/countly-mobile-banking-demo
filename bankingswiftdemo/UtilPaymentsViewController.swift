@@ -14,7 +14,8 @@ class UtilPaymentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       self.navigationItem.title = "Util Payments"
+
 
     }
     

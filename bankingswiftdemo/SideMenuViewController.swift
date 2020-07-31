@@ -34,12 +34,10 @@ class SideMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
-        cell.backgroundColor = UIColor(red:0.04, green:0.07, blue:0.10, alpha:1.0)
-        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor(red: 0.97, green: 0.96, blue: 0.97, alpha: 1.00)
+        cell.textLabel?.textColor = UIColor(red: 0.27, green: 0.29, blue: 0.31, alpha: 1.00)
+        cell.textLabel?.font = UIFont(name:"Inter", size:20)
         cell.textLabel?.text = links[indexPath.row]
-        let myCustomSelectionColorView = UIView()
-        myCustomSelectionColorView.backgroundColor = UIColor(red:0.18, green:0.65, blue:0.20, alpha:1.0)
-        cell.selectedBackgroundView = myCustomSelectionColorView;
         return cell
         
     }

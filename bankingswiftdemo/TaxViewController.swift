@@ -16,6 +16,7 @@ class TaxViewController: UIViewController {
     var selectedOption : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Tax Payment"
         taxType.optionArray = ["Type X", "Type Y", "Type Z"]
         // The the Closure returns Selected Index and String
         taxType.didSelect{(selectedText , index ,id) in

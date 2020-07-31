@@ -18,6 +18,7 @@ class ElectricViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Electric Payment"
         Countly.sharedInstance().recordView("ElectricView")
         companyType.optionArray = ["Company X", "Company Y", "Company Z"]
         // The the Closure returns Selected Index and String

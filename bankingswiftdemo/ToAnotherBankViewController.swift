@@ -17,6 +17,7 @@
         @IBOutlet weak var name: UITextField!
         override func viewDidLoad() {
             super.viewDidLoad()
+            self.navigationItem.title = "To Another Bank"
             Countly.sharedInstance().recordView("ToAnotherBankView")
         }
         

@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         contactButton.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
         Countly.sharedInstance().startEvent("LoginOperation")
         Countly.sharedInstance().recordView("LoginView")
+        self.view.makeToast("This is a piece of toast", duration: 4.0, position: .bottom)
+
    
     }
     
@@ -37,13 +39,7 @@ class ViewController: UIViewController {
 
     @objc func didButtonClick(_ sender: UIButton) {
 
-        Countly.user().custom = ["Has Active Internet Banking":false] as CountlyUserDetailsNullableDictionary
-           Countly.user().custom = ["Has Credit Card":true] as CountlyUserDetailsNullableDictionary
-           Countly.user().custom = ["Has Investment":true] as CountlyUserDetailsNullableDictionary
-           Countly.user().custom = ["Has Loan":true] as CountlyUserDetailsNullableDictionary
-           Countly.user().custom = ["QR":true] as CountlyUserDetailsNullableDictionary
-
-           Countly.user().save()
+      
         if(sender === applicationsButton){
             Countly.sharedInstance().recordView("ApplicationsView")
             if let url = URL(string: "https://demo.count.ly/at/9963384634a5b8e0feb0ea6ef1652f82fa56b9c4"), UIApplication.shared.canOpenURL(url) {
@@ -55,10 +51,11 @@ class ViewController: UIViewController {
             }
         }else if(sender === signInButton){
             
-            DispatchQueue.main.async{
+           /* DispatchQueue.main.async{
                                               self.performSegue(withIdentifier: "toMainView", sender: nil)
                                           }
-            //signInButtonClicked();
+ */
+            signInButtonClicked();
             
                }else if(sender === contactButton){
             let contact_type  = Countly.sharedInstance().remoteConfigValue(forKey:"contact_type");
@@ -119,11 +116,42 @@ class ViewController: UIViewController {
                            // Convert HTTP Response Data to a String
                            if let data = data, let dataString = String(data: data, encoding: .utf8) {
                                let dict = dataString.toJSON() as? [String:AnyObject]
-                               if((dict?["status"] as? Int) == 0){
+                               if(dict == nil){
+                                Countly.user().increment("WrongLoginCount")
+                                Countly.user().save()
+
                                    DispatchQueue.main.async {
                                    self.wrongLoginData()
                                    }
                                }else{
+                              
+
+                                Countly.sharedInstance().endEvent("LoginOperation")
+                                Countly.user().name = (dict!["name"]! as! String) as CountlyUserDetailsNullableString;
+                                Countly.user().username = (dict!["email"]! as! String) as CountlyUserDetailsNullableString
+                                     Countly.user().email = (dict!["email"]! as! String) as CountlyUserDetailsNullableString
+                                Countly.user().birthYear = (dict!["byear"]! as! NSNumber ) as CountlyUserDetailsNullableNumber
+                                     Countly.user().gender = (dict!["gender"]! as! String) as CountlyUserDetailsNullableString
+                                     Countly.user().phone = (dict!["phone"]! as! String) as CountlyUserDetailsNullableString
+                                Countly.sharedInstance().setNewDeviceID(("\(dict!["customerID"]!)"), onServer:true)
+                                     Countly.user().pictureURL = (dict!["picture"]! as! String) as CountlyUserDetailsNullableString
+                                
+                                Countly.user().increment("SuccessfulLoginCount")
+
+                                
+                                let hasActiveInternetBanking = String(dict!["hasActiveInternetBanking"]! as! Bool)
+                                Countly.user().custom = ["Has Active Internet Banking":hasActiveInternetBanking] as CountlyUserDetailsNullableDictionary
+                                         Countly.user().custom = ["Has Credit Card":dict!["hasCreditCard"]!] as CountlyUserDetailsNullableDictionary
+                                         Countly.user().custom = ["Has Investment":dict!["hasInvestment"]!] as CountlyUserDetailsNullableDictionary
+                                         Countly.user().custom = ["Has Loan":dict!["hasLoan"]!] as CountlyUserDetailsNullableDictionary
+                                         Countly.user().custom = ["QR":dict!["QR"]!] as CountlyUserDetailsNullableDictionary
+                                
+                                 Countly.user().custom = ["QRCashWithdrawSuccess":dict!["wrCashWithdrawSuccess"]!] as CountlyUserDetailsNullableDictionary
+                                 Countly.user().custom = ["QRCashWithdrawUnsuccessful":dict!["wrCashWithdrawUnsuccessful"]!] as CountlyUserDetailsNullableDictionary
+                                 Countly.user().custom = ["QR":dict!["wrCashWithdrawAttempt"]!] as CountlyUserDetailsNullableDictionary
+
+                                     Countly.user().save()
+
                                 DispatchQueue.main.async{
                                    self.performSegue(withIdentifier: "toMainView", sender: nil)
                                }
@@ -145,21 +173,6 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
 
-    private func correctLoginData(dict : Dictionary<String,AnyObject>){
-   
-        Countly.sharedInstance().endEvent("LoginOperation")
-   
-        Countly.user().name = dict["name"] as? CountlyUserDetailsNullableString
-        Countly.user().username = dict["name"] as? CountlyUserDetailsNullableString
-        Countly.user().email = dict["email"] as? CountlyUserDetailsNullableString
-        Countly.user().birthYear = dict["byear"] as? CountlyUserDetailsNullableNumber
-        Countly.user().gender = dict["gender"] as? CountlyUserDetailsNullableString
-        Countly.user().phone = dict["phone"] as? CountlyUserDetailsNullableString
-        Countly.sharedInstance().setNewDeviceID(dict["customerID"] as? String, onServer:true)
-        Countly.user().pictureURL = dict["picture"] as? CountlyUserDetailsNullableString
-        Countly.user().save()
- 
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

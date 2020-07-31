@@ -12,6 +12,7 @@ class MarketsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Markets"
 
     Countly.sharedInstance().recordView("MarketsView")
 

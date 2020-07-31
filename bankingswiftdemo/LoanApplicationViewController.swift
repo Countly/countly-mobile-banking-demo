@@ -13,6 +13,7 @@ class LoanApplicationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Loan Application"
         Countly.sharedInstance().recordView("LoanApplicationView")
         // Do any additional setup after loading the view.
     }

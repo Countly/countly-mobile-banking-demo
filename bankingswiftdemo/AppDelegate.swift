@@ -11,6 +11,8 @@ import CoreData
 import Countly
 import IQKeyboardManagerSwift
 import SideMenu
+import Toast_Swift
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -26,9 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.appKey = "7d45543c2e2989f99957c794647a96c73bb0cd13"
         config.host = "https://demo.count.ly"
         config.features = [CLYCrashReporting,CLYPushNotifications]
-        config.enableDebug = true
+        config.enableDebug = false
         config.enableRemoteConfig = true
-        config.requiresConsent = true;
+        //config.requiresConsent = true;
         config.updateSessionPeriod = 5 ;
         config.starRatingMessage = "Please rate our app?"
         config.pushTestMode = CLYPushTestModeTestFlightOrAdHoc
@@ -99,3 +101,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIViewController {
+    open override func awakeFromNib() {
+        let backIcon = UIImage(named: "back")
+        self.navigationController?.navigationBar.backIndicatorImage = backIcon
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backIcon
+        self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 0.26, green: 0.29, blue: 0.32, alpha: 1.00)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        let titleAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "Inter", size: 15)!
+           ]
+        self.navigationController?.navigationBar.titleTextAttributes = titleAttributes
+    }
+}

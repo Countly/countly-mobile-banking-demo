@@ -13,7 +13,7 @@ class InsuranceApplicationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Insurance Application"
         Countly.sharedInstance().recordView("InsuranceApplicationView")
     }
     

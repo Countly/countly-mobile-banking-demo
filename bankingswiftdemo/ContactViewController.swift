@@ -13,6 +13,7 @@ class ContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Contact"
         Countly.sharedInstance().recordView("ContactView")
         // Do any additional setup after loading the view.
     }

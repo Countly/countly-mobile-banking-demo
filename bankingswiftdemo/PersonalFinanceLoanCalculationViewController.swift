@@ -10,18 +10,23 @@ import UIKit
 import Countly
 class PersonalFinanceLoanCalculationViewController: UIViewController {
 
-    @IBOutlet weak var amount: UITextField!
-    @IBOutlet weak var term: UITextField!
     @IBOutlet weak var answer: UILabel!
     
+    @IBOutlet weak var term: UITextField!
+    @IBOutlet weak var amount: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Calculation"
         Countly.sharedInstance().recordView("PersonalFinanceLoanCalculationView")
     }
     
+    
+    
+  
+    
     @IBAction func calculate(_ sender: Any) {
-       
+        print("clicked")
         if let amount = self.amount.text,  let amountInt = Int(amount) {
             if let term = self.term.text,  let termInt = Int(term) {
                     answer.text = String( amountInt / termInt )

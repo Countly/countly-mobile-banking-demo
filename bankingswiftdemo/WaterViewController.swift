@@ -17,7 +17,7 @@ class WaterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "Water Payment"
         Countly.sharedInstance().recordView("WaterView")
         companyType.optionArray = ["Company X", "Company Y", "Company Z"]
         // The the Closure returns Selected Index and String
