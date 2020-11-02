@@ -13,6 +13,7 @@ import Countly
 class TaxViewController: UIViewController {
 
     @IBOutlet weak var taxType: DropDown!
+    
     var selectedOption : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class TaxViewController: UIViewController {
         // Do any additional setup after loading the view.
             self.selectedOption = selectedText
         }
+        self.view.makeToast("Tax payment view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("TaxView")
     }
     

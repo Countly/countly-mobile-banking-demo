@@ -15,6 +15,7 @@ class ApplicationsViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Applications"
+        self.view.makeToast("Applications view tracked", duration: 4.0, position: .bottom)
 
     }
     

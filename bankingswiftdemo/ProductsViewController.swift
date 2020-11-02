@@ -14,6 +14,7 @@ class ProductsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Products"
+        self.view.makeToast("Products view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("ProductsView")
         // Do any additional setup after loading the view.
     }

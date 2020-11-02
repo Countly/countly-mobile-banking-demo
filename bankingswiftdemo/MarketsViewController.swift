@@ -13,6 +13,7 @@ class MarketsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Markets"
+        self.view.makeToast("Markets payment view tracked", duration: 4.0, position: .bottom)
 
     Countly.sharedInstance().recordView("MarketsView")
 

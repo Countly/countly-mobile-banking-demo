@@ -26,6 +26,7 @@ class CreditCardPaymentViewController: UIViewController {
                  self.selectedOption = selectedText
         }
         Countly.sharedInstance().recordView("CreditCardPaymentView")
+        self.view.makeToast("Credit Card payment view tracked", duration: 4.0, position: .bottom)
 
     }
     

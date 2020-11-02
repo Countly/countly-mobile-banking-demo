@@ -18,6 +18,7 @@ class CampaignsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.makeToast("Campaigns view tracked", duration: 4.0, position: .bottom)
        self.navigationItem.title = "Campaigns"
 
     }
@@ -30,11 +31,11 @@ class CampaignsViewController: UIViewController {
             if (error == nil)
             {
                  let campaign_type  = Countly.sharedInstance().remoteConfigValue(forKey:"campaign_type");
-                                 if(campaign_type as! Int == 0){
-                                    self.discountTitle.text = "Campaign for Individual Customers"
-                                 }else{
-                                    self.discountTitle.text = "Campaign for Commercial Customers"
-                                  }
+                         if(campaign_type as! Int == 0){
+                            self.discountTitle.text = "Campaign for Individual Customers"
+                         }else{
+                            self.discountTitle.text = "Campaign for Commercial Customers"
+                          }
             }
             else
             {

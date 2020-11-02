@@ -14,6 +14,7 @@ class InsuranceApplicationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Insurance Application"
+        self.view.makeToast("Insurance application view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("InsuranceApplicationView")
     }
     

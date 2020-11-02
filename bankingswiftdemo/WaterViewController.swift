@@ -18,6 +18,7 @@ class WaterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Water Payment"
+        self.view.makeToast("Water payment view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("WaterView")
         companyType.optionArray = ["Company X", "Company Y", "Company Z"]
         // The the Closure returns Selected Index and String

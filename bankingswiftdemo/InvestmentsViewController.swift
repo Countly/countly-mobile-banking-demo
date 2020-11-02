@@ -20,6 +20,7 @@ class InvestmentsViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Investments"
         Countly.sharedInstance().recordView("InvestmentsView")
+        self.view.makeToast("Investments view tracked", duration: 4.0, position: .bottom)
         organizationType.optionArray = ["Organization X", "Organization Y", "Organization Z"]
         // The the Closure returns Selected Index and String
         organizationType.didSelect{(selectedText , index ,id) in

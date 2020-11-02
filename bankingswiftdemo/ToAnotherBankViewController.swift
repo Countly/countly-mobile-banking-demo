@@ -18,6 +18,7 @@
         override func viewDidLoad() {
             super.viewDidLoad()
             self.navigationItem.title = "To Another Bank"
+            self.view.makeToast("The another bank view tracked", duration: 4.0, position: .bottom)
             Countly.sharedInstance().recordView("ToAnotherBankView")
         }
         

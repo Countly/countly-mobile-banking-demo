@@ -18,6 +18,7 @@ class PersonalFinanceLoanCalculationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Calculation"
+        self.view.makeToast("Personal finance calculation view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("PersonalFinanceLoanCalculationView")
     }
     

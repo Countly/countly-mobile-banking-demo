@@ -19,6 +19,7 @@ class ToCountlyBankViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "To CoBank"
         Countly.sharedInstance().recordView("ToCountlyBankView")
+        self.view.makeToast("To CoBank view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().startEvent("ToCountlyBankTransferOperation")
         // Do any additional setup after loading the view.
     }

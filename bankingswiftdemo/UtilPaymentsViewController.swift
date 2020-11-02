@@ -15,6 +15,7 @@ class UtilPaymentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        self.navigationItem.title = "Util Payments"
+        self.view.makeToast("Util Payments view tracked", duration: 4.0, position: .bottom)
 
 
     }

@@ -16,7 +16,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true;
         Countly.sharedInstance().recordView("MainView")
-        
+        self.view.makeToast("Main view tracked", duration: 4.0, position: .bottom)
+
      
         
         

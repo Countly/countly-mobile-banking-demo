@@ -15,6 +15,7 @@ class TransfersViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Transfers"
+        self.view.makeToast("Transfers view tracked", duration: 4.0, position: .bottom)
 
     }
 

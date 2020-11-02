@@ -15,6 +15,7 @@ class LoanApplicationViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Loan Application"
         Countly.sharedInstance().recordView("LoanApplicationView")
+        self.view.makeToast("Loan application view tracked", duration: 4.0, position: .bottom)
         // Do any additional setup after loading the view.
     }
     

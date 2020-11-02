@@ -14,6 +14,7 @@ class ConsentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Settings"
+        self.view.makeToast("Settings view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("SettingsView")
         // Do any additional setup after loading the view.
     }

@@ -26,6 +26,7 @@ class DepositReturnCalculationViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Calculation"
         Countly.sharedInstance().recordView("DepositReturnCalculationView")
+        self.view.makeToast("Deposit return calculation view tracked", duration: 4.0, position: .bottom)
     }
     
    

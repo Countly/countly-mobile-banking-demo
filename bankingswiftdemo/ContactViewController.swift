@@ -14,6 +14,7 @@ class ContactViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Contact"
+        self.view.makeToast("Contact view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("ContactView")
         // Do any additional setup after loading the view.
     }

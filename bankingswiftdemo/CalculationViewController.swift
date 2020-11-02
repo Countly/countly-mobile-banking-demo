@@ -16,6 +16,7 @@ class CalculationViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Calculation"
         Countly.sharedInstance().recordView("CalculationView");
+        self.view.makeToast("Calculations view tracked", duration: 4.0, position: .bottom)
     }
     
     

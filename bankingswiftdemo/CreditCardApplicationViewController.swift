@@ -14,6 +14,7 @@ class CreditCardApplicationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Credit Card Application"
+        self.view.makeToast("Credit card application view tracked", duration: 4.0, position: .bottom)
         Countly.sharedInstance().recordView("CreditCardApplicationView")
     }
     

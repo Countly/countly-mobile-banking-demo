@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         contactButton.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
         Countly.sharedInstance().startEvent("LoginOperation")
         Countly.sharedInstance().recordView("LoginView")
-        self.view.makeToast("This is a piece of toast", duration: 4.0, position: .bottom)
+        self.view.makeToast("Login view tracked", duration: 4.0, position: .bottom)
 
    
     }
@@ -50,12 +50,11 @@ class ViewController: UIViewController {
                }
             }
         }else if(sender === signInButton){
-            
-           /* DispatchQueue.main.async{
+          
+            //signInButtonClicked();
+            DispatchQueue.main.async{
                                               self.performSegue(withIdentifier: "toMainView", sender: nil)
                                           }
- */
-            signInButtonClicked();
             
                }else if(sender === contactButton){
             let contact_type  = Countly.sharedInstance().remoteConfigValue(forKey:"contact_type");
@@ -138,17 +137,20 @@ class ViewController: UIViewController {
                                 
                                 Countly.user().increment("SuccessfulLoginCount")
 
-                                
-                                let hasActiveInternetBanking = String(dict!["hasActiveInternetBanking"]! as! Bool)
-                                Countly.user().custom = ["Has Active Internet Banking":hasActiveInternetBanking] as CountlyUserDetailsNullableDictionary
-                                         Countly.user().custom = ["Has Credit Card":dict!["hasCreditCard"]!] as CountlyUserDetailsNullableDictionary
-                                         Countly.user().custom = ["Has Investment":dict!["hasInvestment"]!] as CountlyUserDetailsNullableDictionary
-                                         Countly.user().custom = ["Has Loan":dict!["hasLoan"]!] as CountlyUserDetailsNullableDictionary
-                                         Countly.user().custom = ["QR":dict!["QR"]!] as CountlyUserDetailsNullableDictionary
-                                
-                                 Countly.user().custom = ["QRCashWithdrawSuccess":dict!["wrCashWithdrawSuccess"]!] as CountlyUserDetailsNullableDictionary
-                                 Countly.user().custom = ["QRCashWithdrawUnsuccessful":dict!["wrCashWithdrawUnsuccessful"]!] as CountlyUserDetailsNullableDictionary
-                                 Countly.user().custom = ["QR":dict!["wrCashWithdrawAttempt"]!] as CountlyUserDetailsNullableDictionary
+
+                                        
+                                         Countly.user().custom = [
+                                            "QR":dict!["QR"]!,
+                                            "QRCashWithdrawSuccess":dict!["wrCashWithdrawSuccess"]!,
+                                    "QRCashWithdrawUnsuccessful":dict!["wrCashWithdrawUnsuccessful"]!,
+                                            "QRCashWithdrawAttempt":dict!["wrCashWithdrawAttempt"]!,
+                                            "Has Loan":dict!["hasLoan"]!,
+                                            "Has Investment":dict!["hasInvestment"]!,
+                                            "Has Credit Card":dict!["hasCreditCard"]!,
+                                            "Has Active Internet Banking":dict!["hasActiveInternetBanking"]!
+                                            ] as CountlyUserDetailsNullableDictionary
+                               
+                           
 
                                      Countly.user().save()
 

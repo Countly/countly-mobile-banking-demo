@@ -47,7 +47,8 @@ class DepositRatesViewController: UIViewController {
             }
         }
        
-        
+        self.view.makeToast("Deposit rates view tracked", duration: 4.0, position: .bottom)
+
         Countly.sharedInstance().recordView("DepositRatesView")
 
     }
